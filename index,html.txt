@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="card ">
+
+        <div class="card-header">
+            Age
+        </div>
+
+        <div class="card-body">
+              <input type="number" id="num" onchange="check()">
+              <br>
+              
+              
+        </div>
+
+        <div class="card-footer"> 
+            <p id="S1"></p>
+        </div>
+
+    </div>
+    
+</body>
+<script>
+         function check(){
+    n1=document.getElementById("num").value
+    
+    if(n1>18)
+    {
+        document.getElementById("S1").innerHTML="You Are Big";
+    } 
+    else
+    {
+        document.getElementById("S1").innerHTML="You Are Small";
+    }
+}
+</script>
+
+           
+</html>
